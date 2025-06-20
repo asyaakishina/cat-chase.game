@@ -114,7 +114,18 @@ function checkAnswer(button, selected, correct) {
             if (currentQuestionIndex < 10) {
                 showQuestion();
             } else {
-                showPauseBetweenRounds();
+                // После 1 раунда
+                if (currentRound === 0) {
+                    showRewardMessage("Ты увидел кота в окне!");
+                }
+                // После 2 раунда
+                else if (currentRound === 1) {
+                    showRewardMessage("На полу ты заметил следы...");
+                }
+                // После 3 раунда
+                else if (currentRound === 2) {
+                    showRewardMessage("Он оставил свою игрушку на диване.");
+                }
             }
         }, 1000);
     } else {

@@ -49,7 +49,7 @@ const rounds = [
             { fullText: "He ___ speak English. He is from London.", correct: "can", options: ["can", "can't"] },
             { fullText: "People ___ fly.", correct: "can't", options: ["can", "can't"] },
             { fullText: "Dolphins ___ jump high.", correct: "can", options: ["can", "can't"] },
-            { fullText: "She ___ ride a bike fast. She like it.", correct: "can", options: ["can", "can't"] },
+            { fullText: "She ___ ride a bike fast. She likes it.", correct: "can", options: ["can", "can't"] },
             { fullText: "You ___ read the book in the library.", correct: "can", options: ["can", "can't"] },
             { fullText: "The frog ___ talk.", correct: "can't", options: ["can", "can't"] },
             { fullText: "My brother ___ play the piano. He plays it at the school concerts.", correct: "can", options: ["can", "can't"] },

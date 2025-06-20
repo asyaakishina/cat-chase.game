@@ -2,6 +2,7 @@ const questionBox = document.getElementById("question-box");
 const optionsBox = document.getElementById("options");
 const messageBox = document.getElementById("message");
 const statsBox = document.getElementById("stats");
+const rewardBox = document.getElementById("reward"); // новый блок для табличек
 
 let currentRound = 0;
 let currentQuestionIndex = 0;
@@ -62,6 +63,17 @@ const rounds = [
 function showScreen(screenId) {
     document.querySelectorAll(".screen").forEach(el => el.classList.remove("active"));
     document.getElementById(screenId + "-screen").classList.add("active");
+}
+// === Сообщение после раунда ===
+function showRewardMessage(message) {
+    questionBox.textContent = "Молодец!";
+    optionsBox.innerHTML = "";
+    messageBox.innerHTML = `<p>${message}</p>`;
+    statsBox.style.display = "none";
+
+    setTimeout(() => {
+        nextRound();
+    }, 5000); // 5 секунд
 }
 
 // === Отображение вопроса ===
